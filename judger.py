@@ -26,7 +26,7 @@ class JudgeClass:
     
         return False
         
-    def is_open(status):
+    def is_open(self, status):
         if status == '営業':
             return True
         if status == '休み':
