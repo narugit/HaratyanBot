@@ -15,11 +15,12 @@ rem タスクの削除
 schtasks /delete /tn HaratyanCheck /F
 
 rem タスクの生成
-schtasks /create /tn HaratyanCheck /sd %nextdate% /st %nexttime% /sc once /tr %working_directory%\HaratyanCheck.bat
+schtasks /create /tn HaratyanCheck /sd %nextdate% /st %nexttime% /sc once /tr %working_directory%HaratyanCheck.bat
 
 rem 次回タスク日時のログ
 echo; >> log.txt
 echo %nextdate% %nexttime% >> log.txt
+pause
 exit /b
 
 :set_new
