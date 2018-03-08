@@ -21,21 +21,20 @@ def main():
 
         if judge_class.is_open(open_status) == True:
             log_class.set_log('New')
-            tweet='営業します！' + '（{0:%Y}年{0:%m}月{0:%d}日{0:%H}時{0:%M}分）}'.format(datetime.now())
+            tweet='営業します！' + '（{0:%Y}年{0:%m}月{0:%d}日{0:%H}時{0:%M}分）'.format(datetime.now())
             twitter_class.set_tweet(tweet)
             return
         if judge_class.is_open(open_status) == False:
             log_class.set_log('New')
             tweet='休みです><' + '（{0:%Y}年{0:%m}月{0:%d}日{0:%H}時{0:%M}分）'.format(datetime.now())
             twitter_class.set_tweet(tweet)
-            twitter_class.delete_all()
             return
         if judge_class.is_open(open_status) == 'Other':
             log_class.set_log('Other')
             return
 
     log_class.set_log('Old')
-    tweet='ブログ更新なし もうそろそろ！' + '（{0:%Y}年{0:%m}月{0:%d}日{0:%H}時{0:%M}分）}'.format(datetime.now())
+    tweet='ブログ更新なし もうそろそろ！' + '（{0:%Y}年{0:%m}月{0:%d}日{0:%H}時{0:%M}分）'.format(datetime.now())
     twitter_class.set_tweet(tweet)
     return
 
