@@ -34,8 +34,6 @@ def main():
             return
 
     log_class.set_log('Old')
-    tweet='ブログ更新なし もうそろそろ！' + '（{0:%Y}年{0:%m}月{0:%d}日{0:%H}時{0:%M}分）'.format(datetime.now())
-    twitter_class.set_tweet(tweet)
     return
 
 if __name__ == "__main__":
