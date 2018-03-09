@@ -30,7 +30,7 @@ def main():
             twitter_class.set_tweet(tweet)
             return
         if judge_class.is_open(open_status) == 'Other':
-            log_class.set_log('Other')
+            log_class.set_log('Old')
             return
 
     log_class.set_log('Old')
