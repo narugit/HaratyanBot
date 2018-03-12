@@ -7,4 +7,4 @@ wget ${haratyan_url} -O haratyan.html
 nkf -w --overwrite haratyan.html
 python ${working_directory}/main.py
 rm ${working_directory}/haratyan.html
-${working_directory}/Scheduler.sh
+${working_directory}/shell/Scheduler.sh
