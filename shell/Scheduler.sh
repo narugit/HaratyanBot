@@ -1,6 +1,6 @@
 #!/bin/sh
 
-working_directory=`dirname $0`
+working_directory=$(cd $(dirname $0)/..;pwd)
 
 set_new() {
   at 17:00 tomorrow -f ${working_directory}/shell/HaratyanCheck.sh

@@ -14,7 +14,17 @@ class HtmlAnalizeClass:
                 topdate = re.search(r'2[0-9][0-9][0-9].+秒', line)
                 return topdate
 
-    def get_open_status(self):
+    def get_open_status(self, today):
+        today = re.split(r'-', today)    
+        todayDate = today[2]
+        if todayDate[0] == '0':
+            todayDate = todayDate[1:]
+        
         for line in self.lines:
             if re.search(r'^[0-9]+月', line):
-                return re.split(r' ', line)[1][:2]
+                index = line.find(todayDate+'日')
+                if index != -1:
+                    return re.split(r' ', line)[1][:2]
+                return '営業情報なし'
+        
+        return '営業情報なし'

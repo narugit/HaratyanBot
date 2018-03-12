@@ -17,7 +17,7 @@ def main():
     today = str(today)
 
     if judge_class.is_today(topdate, today) == True:
-        open_status = html_analize_class.get_open_status()
+        open_status = html_analize_class.get_open_status(today)
 
         if judge_class.is_open(open_status) == True:
             log_class.set_log('New')
@@ -32,7 +32,7 @@ def main():
         if judge_class.is_open(open_status) == 'Other':
             log_class.set_log('Old')
             return
-
+    
     log_class.set_log('Old')
     return
 
