@@ -4,7 +4,7 @@ import twitter
 
 class TwitterClass:
     def __init__(self):
-        self.key_file = open('key.lock', 'r')
+        self.key_file = open('../key.lock', 'r')
         self.key = self.key_file.readlines()
         self.key_file.close()
         self.CONSUMER_KEY        = self.key[0].replace('\n','')
@@ -15,7 +15,7 @@ class TwitterClass:
                                                     self.CONSUMER_KEY, self.CONSUMER_SECRET_KEY
                                                     )
         )
-        self.id_file = open('id.lock', 'r')
+        self.id_file = open('../id.lock', 'r')
         self.id = self.id_file.readlines()
         self.id_file.close()
         self.TWITTER_ID = self.id

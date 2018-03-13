@@ -6,7 +6,7 @@ class LogClass:
         print('log')
         
     def set_log(self, text):
-        log = open('log.txt', 'w')
+        log = open('../log.txt', 'w')
         log.write(text)
         log.close()
         return

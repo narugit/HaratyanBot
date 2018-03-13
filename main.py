@@ -32,7 +32,7 @@ def main():
         if judge_class.is_open(open_status) == 'Other':
             log_class.set_log('Old')
             return
-    
+
     log_class.set_log('Old')
     return
 

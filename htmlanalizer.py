@@ -4,7 +4,7 @@ import re
 
 class HtmlAnalizeClass:
     def __init__(self):
-        self.fp = open('haratyan.html', 'r', encoding='utf-8')
+        self.fp = open('../haratyan.html', 'r', encoding='utf-8')
         self.lines = self.fp.readlines()
         self.fp.close()
 
