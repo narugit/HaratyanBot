@@ -21,7 +21,7 @@ class HtmlAnalizeClass:
             todayDate = todayDate[1:]
         
         for line in self.lines:
-            if re.search(r'^[0-9]+月', line):
+            if re.search(r'^[0-9０-９]+月', line):
                 index = line.find(todayDate+'日')
                 if index != -1:
                     return re.split(r' ', line)[1][:2]
