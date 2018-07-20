@@ -1,5 +1,7 @@
 # HaratyanBot
 
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
 This is a Twitter bot which tweets whether HaratyanRamen will be open or not today.  
 This twitter bot got permission from the official blog.
 
@@ -17,3 +19,6 @@ Every after 5 p.m., this twitter bot tweets open information getting from [the o
 ## Author
 
 [@narucode](https://twitter.com/naru_code)
+
+## License
+[GPL v3](https://github.com/narugit/HaratyanBot/blob/master/LICENSE)
