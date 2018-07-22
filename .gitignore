@@ -1,5 +1,0 @@
-*.lock
-/__pycache__/*
-*.html
-log.txt
-LicenseData/
